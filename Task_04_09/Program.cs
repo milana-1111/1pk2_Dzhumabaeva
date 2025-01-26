@@ -7,23 +7,30 @@
             //            В массиве найти элементы, которые в нем встречаются только один раз, и вывести их на экран. То есть найти и
             //вывести уникальные элементы массива. (LINQ использовать нельзя)
 
-            int[] artik = { 1, 2, 2, 3 , 4, 4, 5, 6, 6, 7 };
-            Dictionary<int, int> map = new Dictionary<int, int>();
-            //считаем кол-во вхождений каждого элемента
-            foreach (var item in artik)
+            int[] xter = new int[30];
+            Random random = new Random();
+
+            for (int i = 0; i < xter.Length; i++)
             {
-                if (map.ContainsKey(item))
-                { map[item]++; }
-                else { map[item] = 1; }
+                xter[i] = random.Next(10, 50);
             }
-            //выводим элементы, которые встречаются только 1 раз
-            foreach (var krut in map)
+            bool yffer = true;
+            Console.WriteLine($"Уникльные элементы:");
+            for (int i = 0; i <= xter.Length; i++)
             {
-                if (krut.Value ==1)
+                yffer = true;
+                for (int j = 0; j < xter.Length; j++)
                 {
-         Console.WriteLine(krut.Key);
+                    if (xter[i] == xter[j] && i != j)
+                    {
+                        yffer = false;
+                    }
+                }
+                if (yffer == true)
+                {
+                    Console.WriteLine(xter[i]);
                 }
             }
-        }
+            }
     }
 }
