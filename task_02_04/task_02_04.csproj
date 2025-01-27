@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Task_02_02\Task_02_02.csproj" />
+    <ProjectReference Include="..\Task_03_05\Task_03_05.csproj" />
+    <ProjectReference Include="..\Task_03_07\Task_03_07.csproj" />
   </ItemGroup>
 
 </Project>
