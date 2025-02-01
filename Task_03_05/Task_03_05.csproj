@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+<<<<<<< HEAD:Task_03_05/Task_03_05.csproj
+=======
+  <ItemGroup>
+    <ProjectReference Include="..\Task_05_04\Task_05_04.csproj" />
+  </ItemGroup>
+
+>>>>>>> задача 5 урока:Task_05_07/Task_05_07.csproj
+</Project>
